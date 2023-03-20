@@ -1,0 +1,61 @@
+/*Parrafo*/
+.parrafo
+{
+  color: rgb(0, 0, 0);
+  font-family: 'Tilt Warp', cursive;
+}
+
+/*Titulo*/
+.titulo{
+  color: rgba(95, 0, 248, 0.411);
+  font-family: 'Righteous', cursive;  
+}
+
+/*color de fondo*/
+.fondo
+{
+  background-color: rgba(84, 12, 199, 0.555);
+}
+
+/*centrado de imagenes*/
+.img
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*centrado de pagina*/
+.centrar
+{
+    text-align: center;
+}
+
+/*Menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(25, 0, 255);
+  }
+  
+  li {
+    float:right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #7e7e7e;
+  }
