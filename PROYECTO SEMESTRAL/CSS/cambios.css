@@ -11,16 +11,28 @@
   font-family: 'Righteous', cursive;  
 }
 
-/*color de fondo*/
-.fondo
+/*color de fondo play*/
+.fondoP
 {
-  background-image: url("../img/fondo_xbox.jpg") ;
+  background-image: url("../img/PLAYSTATION/FondoPlay.png") ;
   background-color: rgba(84, 12, 199, 0.555);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+/*Color de fondo Xbox*/
+.fondoX
+{
+  background-image: url("") ;
+  background-color: rgba(84, 12, 199, 0.555);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
 /*centrado de imagenes*/
 .img
-{
+{ 
 
 width: 70%;
 max-width: 500px;
