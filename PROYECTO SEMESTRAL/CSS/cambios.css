@@ -71,6 +71,24 @@ max-width: 500px;
   color: rgb(255, 255, 255);
 }
 
+/*color de letra nintendo*/
+.letraN
+{
+
+  color: rgb(255, 255, 255);
+}
+/*color de letra xbox*/
+.letraX
+{
+  color: rgb(255, 255, 255);
+}
+
+/*color de letra PC*/
+.letraPC
+{
+  color: rgb(255, 255, 255);
+}
+
 /*Menu*/
 ul
  {
