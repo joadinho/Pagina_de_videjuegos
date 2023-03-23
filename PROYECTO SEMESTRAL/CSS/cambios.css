@@ -20,10 +20,31 @@
   background-attachment: fixed;  
   background-size: cover;
 }
+
 /*Color de fondo Xbox*/
 .fondoX
 {
-  background-image: url("") ;
+  background-image: url("../img/XBOX/fondoXBOX.webp") ;
+  background-color: rgba(84, 12, 199, 0.555);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/*Color de fondo Nintendo*/
+.fondoN
+{
+  background-image: url("../img/NINTENDO/fondoNintendo.png") ;
+  background-color: rgba(84, 12, 199, 0.555);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/*Color de fondo PC*/
+.fondoPC
+{
+  background-image: url("../img/PC/fondopc.jpg") ;
   background-color: rgba(84, 12, 199, 0.555);
   background-repeat: no-repeat;
   background-attachment: fixed;  
