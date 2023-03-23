@@ -65,29 +65,41 @@ max-width: 500px;
     text-align: center;
 }
 
-/*color de letra play*/
+/*letra play*/
 .letrap
 {
   color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
 
-/*color de letra nintendo*/
+/*letra nintendo*/
 .letraN
 {
 
   color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
-/*color de letra xbox*/
+/*letra xbox*/
 .letraX
 {
-  color: rgb(255, 255, 255);
+  color: rgb(199, 125, 125);
+  font-family: 'Roboto', sans-serif;
 }
 
-/*color de letra PC*/
+/*letra PC*/
 .letraPC
 {
   color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
+
+/*Letra titulo*/
+.letraT{
+  font-family: 'Lora', serif;
+  color:rgb(255, 255, 255)
+}
+
+
 
 /*Menu*/
 ul
