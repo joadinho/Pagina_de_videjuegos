@@ -11,7 +11,7 @@
   font-family: 'Righteous', cursive;  
 }
 
-/*color de fondo play*/
+/*Fondo play*/
 .fondoP
 {
   background-image: url("../img/PLAYSTATION/FondoPlay.png") ;
@@ -21,7 +21,7 @@
   background-size: cover;
 }
 
-/*Color de fondo Xbox*/
+/*Fondo Xbox*/
 .fondoX
 {
   background-image: url("../img/XBOX/fondoXBOX.webp") ;
@@ -31,7 +31,7 @@
   background-size: cover;
 }
 
-/*Color de fondo Nintendo*/
+/*Fondo Nintendo*/
 .fondoN
 {
   background-image: url("../img/NINTENDO/fondoNintendo.png") ;
@@ -41,7 +41,7 @@
   background-size: cover;
 }
 
-/*Color de fondo PC*/
+/*Fondo PC*/
 .fondoPC
 {
   background-image: url("../img/PC/fondopc.jpg") ;
@@ -50,6 +50,13 @@
   background-attachment: fixed;  
   background-size: cover;
 }
+
+/*Fondo de Pantalla principal*/
+.fondoPP{
+  background-image: url("../img/PantallaPrincipal/fondoPantallaPrincipal.jpg") ;
+  background-color: rgba(84, 12, 199, 0.555);
+}
+
 
 /*centrado de imagenes*/
 .img
