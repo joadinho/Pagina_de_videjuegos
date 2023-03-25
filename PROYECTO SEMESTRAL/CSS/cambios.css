@@ -112,6 +112,17 @@ max-width: 500px;
   text-align: right;
 }
 
+/*algunas imagenes*/
+.AI{
+  width:300; height:250;
+}
+/*Logo youtube*/
+
+.logoY{
+  width:50px;height:40px;
+
+}
+
 /*Menu*/
 ul
  {
