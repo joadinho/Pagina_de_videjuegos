@@ -24,7 +24,7 @@
 /*Fondo Xbox*/
 .fondoX
 {
-  background-image: url("../img/XBOX/fondoXBOX.webp") ;
+  background-image: url("../img/XBOX/fondo.jpg") ;
   background-color: rgba(84, 12, 199, 0.555);
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -89,7 +89,7 @@ max-width: 500px;
 /*letra xbox*/
 .letraX
 {
-  color: rgb(199, 125, 125);
+  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
 }
 
