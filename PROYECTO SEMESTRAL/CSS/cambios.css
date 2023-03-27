@@ -44,7 +44,7 @@
 /*Fondo PC*/
 .fondoPC
 {
-  background-image: url("../img/PC/fondopc.jpg") ;
+  background-image: url("../img/PC/fondoPC.jpg") ;
   background-color: rgba(84, 12, 199, 0.555);
   background-repeat: no-repeat;
   background-attachment: fixed;  
