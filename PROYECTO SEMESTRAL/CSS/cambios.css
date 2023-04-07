@@ -57,6 +57,11 @@
   background-color: rgba(84, 12, 199, 0.555);
 }
 
+/*Fondo pantallas de login*/
+.fondoLo{
+  background-color: rgb(98, 247, 247);
+}
+
 
 /*centrado de imagenes*/
 .img
@@ -140,4 +145,3 @@ max-width: 500px;
   margin-left: 110px;
 }
 
-/*Cuenta regresiva*/
