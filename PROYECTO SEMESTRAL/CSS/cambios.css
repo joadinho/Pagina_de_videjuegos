@@ -154,6 +154,7 @@ max-width: 500px;
 /*Perfiles*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(252, 236, 235);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -161,7 +162,7 @@ max-width: 500px;
 }
 
 .title {
-  color: grey;
+  color: rgb(29, 100, 102);
   font-size: 18px;
 }
 
@@ -170,8 +171,8 @@ button {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: rgb(255, 255, 255);
+  background-color: #050505;
   text-align: center;
   cursor: pointer;
   width: 50px;
@@ -181,7 +182,7 @@ button {
 a {
   text-decoration: none;
   font-size: 22px;
-  color: black;
+  color: rgb(12, 12, 12);
 }
 
 button:hover, a:hover {
@@ -229,6 +230,6 @@ body {
 
 .flip-card-back {
   background-color: #2980b9;
-  color: white;
+  color: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
