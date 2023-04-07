@@ -147,10 +147,10 @@ max-width: 500px;
 
 /*Cursor Play*/
 .cuP{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cursor_play.png),auto;
 }
 .cuP1{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cuP1.png),auto;
 }
 
 /*Cursor PC*/
