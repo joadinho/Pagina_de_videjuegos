@@ -103,7 +103,8 @@ max-width: 500px;
 /*Letra titulo*/
 .letraT{
   font-family: 'Lora', serif;
-  color:rgb(255, 255, 255)
+  background-color: rgb(137, 27, 240);
+  color:rgb(245, 245, 245);
 }
 
 /*colocar parrafo a la derecha*/
@@ -121,6 +122,22 @@ max-width: 500px;
 .logoY{
   width:50px;height:40px;
 
+}
+
+/*Cursor Xbox*/
+
+.cuX{
+  cursor: url(../img/CURSOR/cursor_Xbox1.png),auto; 
+  
+}
+.cuX1{
+  cursor: url(../img/CURSOR/cursor_Xbox.png), auto;
+}
+
+/*Margen iniciar*/
+
+.margenI{
+  margin-left: 110px;
 }
 
 /*Menu*/
