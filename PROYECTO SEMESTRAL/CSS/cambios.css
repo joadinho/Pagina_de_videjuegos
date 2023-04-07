@@ -155,18 +155,18 @@ max-width: 500px;
 
 /*Cursor PC*/
 .cuPC{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cuPC.png),auto;
 }
 .cuPC1{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cuPC1.png),auto;
 }
 
 /*Cursor Nintendo*/
 .cuN{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cuN.png),auto;
 }
 .cuN1{
-  cursor: url(),auto;
+  cursor: url(../img/CURSOR/cuN1.png),auto;
 }
 
 /*Margen iniciar*/
