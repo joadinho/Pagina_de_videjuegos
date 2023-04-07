@@ -145,8 +145,31 @@ max-width: 500px;
   cursor: url(../img/CURSOR/cursor_Xbox.png), auto;
 }
 
-/*Margen iniciar*/
+/*Cursor Play*/
+.cuP{
+  cursor: url(),auto;
+}
+.cuP1{
+  cursor: url(),auto;
+}
 
+/*Cursor PC*/
+.cuPC{
+  cursor: url(),auto;
+}
+.cuPC1{
+  cursor: url(),auto;
+}
+
+/*Cursor Nintendo*/
+.cuN{
+  cursor: url(),auto;
+}
+.cuN1{
+  cursor: url(),auto;
+}
+
+/*Margen iniciar*/
 .margenI{
   margin-left: 110px;
 }
