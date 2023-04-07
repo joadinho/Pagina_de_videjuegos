@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3"></div>
             <div class="col-md-6 col-sm-6" style="margin-top: 80px;">
-                <h1 class="centrar ">Iniciar Sesion</h1><br><br>
+                <h1 style="text-align: center;">Iniciar Sesion</h1><br><br>
                 <form action="#" method="POST" name="form1" enctype="multipart/form-data">
                     <div class="form-group"  >
                         <h4><label class="form-label">Email: </label></h4>
@@ -72,9 +72,13 @@
                         <h4><label class="form-label">Contraseña: </label></h4>
                         <input required class="form-control" type="password" name="nombre" value="" placeholder="hola123">
                     </div>
-                    <a href="olvidado.html"><p>¿Olvidaste tu contraseña?</p></a><BR><br>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Mantener sesion iniciada</label>
+                    </div><br>
+                    <a href="olvidado.html"><p>¿Olvidaste tu contraseña?</p></a><br>
                     
-                    <input type="submit" value="Enviar" class="btn btn-danger" style="margin-left:390px; ">
+                    <input type="submit" value="Enviar" class="btn btn-danger"  >
                     <input type="reset" value="Limpiar" class="btn btn-danger" >
                 </form>
             </div>
