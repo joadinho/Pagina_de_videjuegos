@@ -74,7 +74,10 @@
 .fondoVJN{
   background-color: rgb(163, 0, 0);
 }
-
+/*Fondos de videoJuegos de pc*/
+.fondoVJPC{
+  background-color: rgb(2, 155, 142);
+}
 
 /*centrado de imagenes*/
 .img
