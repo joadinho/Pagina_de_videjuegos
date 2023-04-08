@@ -62,9 +62,17 @@
   background-color: rgb(98, 247, 247);
 }
 
-/*Fondos de videoJuegos*/
-.fondoVJ{
-  background-color: rgb(34, 34, 85);
+/*Fondos de videoJuegos de play*/
+.fondoVJP{
+  background-color: #0062cc;
+}
+/*Fondos de videoJuegos de xbox*/
+.fondoVJX{
+  background-color: rgb(14, 96, 14);
+}
+/*Fondos de videoJuegos de nintendo*/
+.fondoVJN{
+  background-color: rgb(163, 0, 0);
 }
 
 
