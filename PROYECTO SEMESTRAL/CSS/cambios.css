@@ -140,6 +140,10 @@ max-width: 500px;
   font-family: 'PT Sans Narrow', sans-serif;
 
 }
+/*Estilo de tablas*/
+table, th, td {
+  border: 2px solid black;
+}
 
 /*colocar parrafo a la derecha*/
 
