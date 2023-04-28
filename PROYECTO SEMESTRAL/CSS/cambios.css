@@ -104,6 +104,7 @@ max-width: 500px;
 .letraLo{
   font-family: 'PT Serif', serif;
   color: rgb(14, 13, 13);
+  padding-left: 5%;
 }
 
 /*letra nintendo*/
@@ -321,7 +322,7 @@ body {
 }
 
 .form{
-  width: 100%;
+  width: 99%;
   margin: auto;
 }
 
@@ -408,4 +409,19 @@ input:focus~.barra::before{
   .form{
       width: 80%;
   }
+}
+.sesion{
+  display: flex;
+}
+.titulodestacado{
+  background:#9c9c9c; 
+  color:white; 
+  font-weight:bold; 
+  padding:15px; 
+  border:3px solid #797777;
+  margin-top:40px; 
+  margin-bottom:40px; 
+  text-align:center; 
+  font-size:22px; 
+  border-radius:10px;
 }
