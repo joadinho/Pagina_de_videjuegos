@@ -49,10 +49,17 @@ $(document).ready(function(){
         }
 
         //validar password
+
+        
         if(clave.trim().length < 8 || clave.trim().length > 12){
             msjMostrar = msjMostrar + "<br>La clave debe tener entre 8 y 12 caracteres";
             enviar = true;
         }
+        if(clave.trim() == ""){
+            msjMostrar += "<br> La clave no puede estar vacia";
+            enviar = true;
+        }
+        
 
         
 
@@ -83,10 +90,10 @@ $(document).ready(function(){
         
 
         if(enviar){
-            $("#warnings").html(msjMostrar);
+            $("#mensaje").html(msjMostrar);
         }
         else{
-            $("#warnings").html("Enviado");
+            $("#mensaje").html("Enviado");
         }
 
     });
