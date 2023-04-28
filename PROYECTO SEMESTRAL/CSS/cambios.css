@@ -308,23 +308,15 @@ body {
   box-sizing: border-box;
 }
 
-.body {
-  font-family: 'Roboto';
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .h1{
   text-align: center;
   font-weight: 700;
 }
 
 #formlogin{
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 40px 0;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 0 #ffffffcc;
   border-radius: 10px;
 }
 
@@ -356,7 +348,7 @@ input:focus{
   color: #5e5d5d;
 }
 
-label{
+.label{
   color: var(--colorTextos);
   font-size: 16px;
   position: absolute;
@@ -385,7 +377,6 @@ input:valid~label{
   width: 0%;
   bottom: 0;
   position: absolute;
-  background: linear-gradient(to right, #B06AB3, #4568DC);
   transition: 0.3s ease width;
   left: 0;
 }
@@ -403,25 +394,18 @@ input:focus~.barra::before{
 }
 
 .buttonlogin{
-  font-family: 'roboto';
-  background: #4568DC;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B06AB3, #4568DC);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
   display: block;
   width: 80%;
   margin: 10px auto;
   color: #fff;
   height: 40px;
-  font-size: 16px;
-  cursor: pointer;
+  
+ 
 }
 
 @media screen and (max-width:500px){
-  form{
+  .form{
       width: 80%;
   }
 }
