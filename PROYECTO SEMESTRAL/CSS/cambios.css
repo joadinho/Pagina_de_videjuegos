@@ -315,7 +315,7 @@ body {
 }
 
 #formlogin{
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
   padding: 40px 0;
   box-shadow: 0 0 6px 0 #ffffffcc;
   border-radius: 10px;
@@ -387,11 +387,10 @@ input:focus~.barra::before{
 }
 
 .warnings{
-  width: 200px;
-  text-align: center;
-  margin: auto;
-  color: #B06AB3;
-  padding-top: 20px;
+  width: 100%;
+  text-align: left;
+  color: #070652;
+  padding-top: 10px;
 }
 
 .buttonlogin{
@@ -414,7 +413,7 @@ input:focus~.barra::before{
   display: flex;
 }
 .titulodestacado{
-  background:#9c9c9c; 
+  background:rgba(156, 156, 156, 0.9); 
   color:white; 
   font-weight:bold; 
   padding:15px; 
