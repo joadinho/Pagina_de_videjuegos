@@ -294,7 +294,7 @@ body {
   color: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
-
+  
 /*posible cambio, añadiir estilo a inicio de sesion*/
 :root {
   --colorTextos: #49454567;
