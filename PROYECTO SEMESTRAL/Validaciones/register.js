@@ -109,20 +109,16 @@ $(document).ready(function(){
             enviar = true;
         }
         if(contacto.trim().length < 9 || contacto.trim().length > 9){
-            msjMostrar += "<br>-Telefono invalido. Deben ser 9 numeros "
-            enviar = true;
+            
         }
 
         //validar edad
         
-        if(!["Xbox", "Play"].includes(plataformaJ)){
-            msjMostrarAgregar += "<br>-Plataforma inválida";
+        if(edad < 15){
+            msjMostrar += "<br>-Para registrarse debe tener una edad minima de 15 años "
             enviar = true;
-          }
-        
 
-            
-
+        }
         
 
         if(enviar){
