@@ -22,27 +22,27 @@ $(document).ready(function(){
         }
 
         if(password_login.trim()  == ""){
-            msjMostrar += "<br>-Clave invalida no puede estar vacia";
+            msjMostrarLogin += "<br>-Clave invalida no puede estar vacia";
             enviar = true;
         }
 
         if (!password_login.match(/([A-Z])/)){
-           msjMostrar += "<br>-Clave invalida Falta una letra mayuscula";
+           msjMostrarLogin += "<br>-Clave invalida Falta una letra mayuscula";
             enviar = true;
         }
 
         if (!password_login.match(/([a-z])/)){
-            msjMostrar += "<br>-Clave invalida Falta una letra minuscula";
+            msjMostrarLogin += "<br>-Clave invalida Falta una letra minuscula";
              enviar = true;
          }
 
          if (!password_login.match(/([0-9])/)){
-            msjMostrar += "<br>-Clave invalida Debe contener al menos un numero";
+            msjMostrarLogin += "<br>-Clave invalida Debe contener al menos un numero";
             enviar = true;
          }
 
-        if (!password_login.match(/([!,%,&,@,#,$,^,,?,_,~])/)){
-            msjMostrar += "<br>-Clave invalida Debe contener un caracter especial";
+        if (!password_login.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
+            msjMostrarLogin += "<br>-Clave invalida Debe contener un caracter especial";
             enviar = true;
          }
 

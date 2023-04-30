@@ -27,7 +27,7 @@ $(document).ready(function(){
     
         
         if(nombre.trim() == ""){
-            msjMostrar += "<br>-El nombre no puede estar vacio";
+            msjMostrar += "<br>-El campo nombre no puede estar vacio";
             enviar = true;
         }
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 
         if(apellido.trim() == ""){
-            msjMostrar += "<br>-El apellido no puede estar vacio";
+            msjMostrar += "<br>-El campo apellido no puede estar vacio";
             enviar = true;
         }
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
             enviar = true;
          }
 
-        if (!clave.match(/([!,%,&,@,#,$,^,,?,_,~])/)){
+        if (!clave.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
             msjMostrar += "<br>-Clave invalida Debe contener un caracter especial";
             enviar = true;
          }
@@ -97,7 +97,7 @@ $(document).ready(function(){
         }
 
         if(correo.trim() == ""){
-            msjMostrar += "<br>-El correo no puede estar vacio";
+            msjMostrar += "<br>-El campo correo no puede estar vacio";
             enviar = true;
         }
 
@@ -105,7 +105,7 @@ $(document).ready(function(){
 
 
         if(contacto.trim() == ""){
-            msjMostrar += "<br>-El telefono no puede estar vacio";
+            msjMostrar += "<br>-El campo telefono no puede estar vacio";
             enviar = true;
         }
         if(contacto.trim().length < 9 || contacto.trim().length > 9){
@@ -134,7 +134,7 @@ $(document).ready(function(){
             var year = parseInt(parts[0], 10);
 
         // Revisar los rangos de año y mes
-            if( (year < 2008)  (year > 2023)  (month == 0)  (month > 12) ){
+            if( (year < 1000)  (year > 3000)  (month == 0)  (month > 12) ){
 
             
             return false;
@@ -145,11 +145,7 @@ $(document).ready(function(){
             if(year % 400 == 0  (year % 100 != 0 && year % 4 == 0))
                 monthLength[1] = 29;
                 
-            if(year < 2008 ){
-            msjMostrar+="<br> fecha de nacimiento invalida ";
-            enviar = true;
-
-        }
+           
 
         // Revisar el rango del dia
         return day > 0 && day <= monthLength[month - 1];
@@ -161,10 +157,11 @@ $(document).ready(function(){
         
         
 
-        $("#Enviar").click(function() {
+        $("#formregister").click(function() {
             alert( isValidDate($("#f_nac").val()) );
 
-            
+            msjMostrar += "hola";
+            enviar = true;
 
         });
 
