@@ -1,18 +1,15 @@
 $(document).ready(function(){
-    $("#formlogin").submit(function(e){
+    $("#formregister").submit(function(e){
         e.preventDefault();
-        var nombre = $("#nombre").val();
-        var apellido = $("#apellido").val();
-        var clave = $("#password").val();
+        var nombre    = $("#nombre").val();
+        var apellido  = $("#apellido").val();
+        var clave     = $("#password").val();
         var con_clave = $("#con_password").val();
-        var correo = $("#email").val();
-        var contacto = $("#telefono").val();
-        var edad = $("#edad").val();
-        var f_nac = $("#f_nac").val();
-
-
-
-
+        var correo    = $("#email").val();
+        var contacto  = $("#telefono").val();
+        var edad      = $("#edad").val();
+        var f_nac     = $("#f_nac").val();
+        
         let msjMostrar = "";
         let enviar = false;
 
@@ -54,34 +51,42 @@ $(document).ready(function(){
 
         //validar password
         if(clave.trim().length < 8 || clave.trim().length > 12){
-            msjMostrar = msjMostrar + "<br>-La clave debe tener entre 8 y 12 caracteres";
+            msjMostrar = msjMostrar + "<br>-Clave invalida debe tener entre 8 y 12 caracteres";
             enviar = true;
         }
 
         if(clave.trim()  == ""){
-            msjMostrar += "<br>-La clave no puede estar vacia";
+            msjMostrar += "<br>-Clave invalida no puede estar vacia";
             enviar = true;
         }
 
         if (!clave.match(/([A-Z])/)){
-           msjMostrar += "<br>-Falta una letra mayuscula";
+           msjMostrar += "<br>-Clave invalida Falta una letra mayuscula";
             enviar = true;
         }
 
         if (!clave.match(/([a-z])/)){
-            msjMostrar += "<br>-Falta una letra minuscula";
+            msjMostrar += "<br>-Clave invalida Falta una letra minuscula";
              enviar = true;
          }
 
          if (!clave.match(/([0-9])/)){
-            msjMostrar += "<br>-Debe contener al menos un numero";
+            msjMostrar += "<br>-Clave invalida Debe contener al menos un numero";
             enviar = true;
          }
 
         if (!clave.match(/([!,%,&,@,#,$,^,,?,_,~])/)){
-            msjMostrar += "<br>-Debe contener un caracter especial";
+            msjMostrar += "<br>-Clave invalida Debe contener un caracter especial";
             enviar = true;
          }
+
+        //valida la clave confirmada
+
+        if (con_clave.trim() != clave.trim()){
+            msjMostrar += "<br>-La clave no es la misma";
+            enviar = true;
+
+        }
 
 
         //validar correo
@@ -161,15 +166,17 @@ $(document).ready(function(){
 
             
 
-            });
+        });
+
+            
 
         
 
         if(enviar){
-            $("#mensaje").html(msjMostrar);
+            $("#mensaje_register").html(msjMostrar);
         }
         else{
-            $("#mensaje").html("Enviado");
+            $("#mensaje_register").html("Enviado");
         }
 
         

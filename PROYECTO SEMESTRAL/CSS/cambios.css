@@ -314,7 +314,7 @@ body {
   font-weight: 700;
 }
 
-#formlogin{
+.fondoform{
   background: rgba(255, 255, 255, 0.9);
   padding: 40px 0;
   box-shadow: 0 0 6px 0 #ffffffcc;
@@ -326,7 +326,7 @@ body {
   margin: auto;
 }
 
-form .grupo{
+.grupo{
   position: relative;
   margin: 45px ;
 }
