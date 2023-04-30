@@ -46,6 +46,19 @@ $(document).ready(function(){
             enviar = true;
         }
 
+        //valida las plataformas
+
+
+
+        if (!["xbox series", "playstation 3", "nintendo", "pc","xbox one","playstation 4","playstation 5","xbox 360"].includes(plataformaJ.toLowerCase())) {
+            msjMostrarAgregar += "<br>-Plataforma inválida";
+            enviar = true;
+          }
+
+        
+
+        
+
         
 
 

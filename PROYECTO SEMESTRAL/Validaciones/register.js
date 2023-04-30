@@ -115,11 +115,10 @@ $(document).ready(function(){
 
         //validar edad
         
-        if(edad < 15){
-            msjMostrar += "<br>-Para registrarse debe tener una edad minima de 15 años";
+        if(!["Xbox", "Play"].includes(plataformaJ)){
+            msjMostrarAgregar += "<br>-Plataforma inválida";
             enviar = true;
-        }
-
+          }
         
 
             
