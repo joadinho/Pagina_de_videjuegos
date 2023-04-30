@@ -42,7 +42,7 @@ $(document).ready(function(){
          }
 
         if (!password_login.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
-            msjMostrarLogin += "<br>-Clave invalida Debe contener un caracter especial";
+            msjMostrarLogin += "<br>-Clave invalida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
             enviar = true;
          }
 

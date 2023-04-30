@@ -76,14 +76,14 @@ $(document).ready(function(){
          }
 
         if (!clave.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
-            msjMostrar += "<br>-Clave invalida Debe contener un caracter especial";
+            msjMostrar += "<br>-Clave invalida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
             enviar = true;
          }
 
         //valida la clave confirmada
 
         if (con_clave.trim() != clave.trim()){
-            msjMostrar += "<br>-La clave no es la misma";
+            msjMostrar += "<br>-La confirmada clave no es la misma";
             enviar = true;
 
         }
@@ -120,50 +120,7 @@ $(document).ready(function(){
             enviar = true;
         }
 
-        //validar fecha nacimiento
-
-        function isValidDate(dateString){
-        // revisar el patrón
-            if(!/^\d{4}-\d{1,2}-\d{1,2}$/.test(dateString))
-            return false;
-
-        // convertir los numeros a enteros
-            var parts = dateString.split("/");
-            var day = parseInt(parts[2], 10);
-            var month = parseInt(parts[1], 10);
-            var year = parseInt(parts[0], 10);
-
-        // Revisar los rangos de año y mes
-            if( (year < 1000)  (year > 3000)  (month == 0)  (month > 12) ){
-
-            
-            return false;
-            }
-            var monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
-
-        // Ajustar para los años bisiestos
-            if(year % 400 == 0  (year % 100 != 0 && year % 4 == 0))
-                monthLength[1] = 29;
-                
-           
-
-        // Revisar el rango del dia
-        return day > 0 && day <= monthLength[month - 1];
         
-        
-        
-        };
-
-        
-        
-
-        $("#formregister").click(function() {
-            alert( isValidDate($("#f_nac").val()) );
-
-            msjMostrar += "hola";
-            enviar = true;
-
-        });
 
             
 
