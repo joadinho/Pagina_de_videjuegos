@@ -70,37 +70,45 @@
                   <form action="#" method="POST" id="formregister" class="fondoform" enctype="multipart/form-data">
                     
                     <h1 class="centrar letraLo" >Regístrate</h1><br>
-                    <div class="form">
-                    <div class="form-group" ><label class="form-label , letraLo , cu"><h4>Nombre:</h4> </label>
-                    <input class="form-control , letraLo , cu1" type="text" name="" id="nombre" value="" ></div>
+                    <div class="form"></div>
+                    <div class="grupo">
+                      <input type="text" name="" id="nombre"><span class="barra" ></span>
+                      <label for=""><h5>Nombre</h5></label>
+                  </div>
                     
-                    <div class="form-group" ><label class="form-label , letraLo , cu"><h4>Apellido: </h4></label>
-                        <input class="form-control , letraLo , cu1" type="text" name="" id="apellido" value="" ></div>
+                  <div class="grupo">
+                    <input type="text" name="" id="apellido"><span class="barra" ></span>
+                    <label for=""><h5>Apellido</h5></label>
+                </div>
 
-                    <div class="form-group" >
-                        <label class="form-label , letraLo , cu" ><h4>Contraseña:</h4> </label>
-                        <input  class="form-control , letraLo , cu1" type="password" name="" id="password" value="" ></div>
+                <div class="grupo">
+                  <input type="password" name="" id="password"><span class="barra"></span>
+                  <label for=""><h5>Contraseña</h5></label>
+                </div>
+                <div class="grupo">
+                  <input type="password" name="" id="con_password"><span class="barra"></span>
+                  <label for=""><h5>Confirmar contraseña</h5></label>
+                </div>
 
-                    <div class="form-group" >
-                        <label class="form-label , letraLo , cu"><h4>Confirmar contraseña:</h4> </label>
-                        <input  class="form-control , letraLo , cu1" type="password" name="" id="con_password" value=""  ></div>
+                <div class="grupo">
+                  <input type="text" name="" id="email"><span class="barra" ></span>
+                  <label for=""><h5>Email</h5></label>
+                </div>
 
-                    <div class="form-gruop" ><label class="form-label , letraLo , cu" ><h4>Email:</h4> </label>
-                        <input  class="form-control , letraLo , cu1" type="text" name="" id="email" value="" ></div><br>
+                <div class="grupo">
+                  <input type="text" name="" id="telefono"><span class="barra" ></span>
+                  <label for=""><h5>Telefono movil</h5></label>
+                </div>
 
-                    <div class="form-gruop" ><label class="form-label , letraLo , cu" ><h4>Telefono movil:</h4> </label>
-                        <input  class="form-control , letraLo , cu1" type="text" name="" id="telefono" value="" ></div><br>
-
-                    <div class="form-group"><label class="form-label , letraLo , cu"><h4>Edad:</h4> </label><br>
-                    <input class="cu1" type="number" name="" id="edad" ></div><br>
+                <div class="grupo">
+                  <input type="number" name="" id="edad"><span class="barra" ></span>
+                  <label for=""><h5>Edad</h5></label>
+                </div>
 
                     <div class="form-group">
                         <label for="exampleFormControlFile1" class="letraLo , cu"><h4>Seleccione una foto de perfil</h4></label>
                         <h5><input type="file" class="form-control-file , letraLo , cu1" id="exampleFormControlFile1"></h5>
                       </div><br>
-
-                    
-
                     <div class="row">
                       <div class="col-md-6">
                         <input type="submit" value="Enviar" class="btn btn letraLo" style="text-align: center; color: rgb(255, 255, 255); background-color: rgb(97, 97, 97); margin-left: auto;">
@@ -115,6 +123,12 @@
                 </form>
             </div>
           </div>
+          <br><br>
+
+
+
+
+
     </div>    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
