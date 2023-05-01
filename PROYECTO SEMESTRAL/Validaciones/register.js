@@ -115,17 +115,22 @@ $(document).ready(function(){
 
 
         if(contacto.trim() == ""){
-            msjMostrar += "<br>-El campo telefono no puede estar vacio.";
+            msjMostrar += "<br>-El campo teléfono no puede estar vacio.";
             enviar = true;
         }
         
-        if(contacto.trim().length < 9 || contacto.trim().length > 11){
-            msjMostrar += "<br>-El telefono son entre 9 y 11 numeros.";
+        if(contacto.trim().length < 9 || contacto.trim().length > 12){
+            msjMostrar += "<br>-El télefono son entre 9 y 11 numeros.";
             enviar = true;
         }
 
-        if (contacto.match(/([a-z])/)){
-            msjMostrar +="<br>-El telefono solo pueden ser numeros.";
+        if (contacto.match(/([a-z , A-Z])/)){
+            msjMostrar +="<br>-El campo télefono no permite letras.";
+            enviar = true;
+         }
+
+        if (contacto.match(/([!,%,&,@,#,$,^,,?,_,~,.,])/)){
+            msjMostrar += "<br>-El teléfono no permite caracteres especiales excepto el +";
             enviar = true;
          }
 
