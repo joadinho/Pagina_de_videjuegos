@@ -14,6 +14,10 @@ $(document).ready(function(){
             msjMostrarLogin += "-El correo electrónico introducido es invalido. Debe contener un @";
             enviar = true;
         }
+        if(email_login.trim() == ""){
+            msjMostrar += "<br>-El campo correo no puede estar vacio";
+            enviar = true;
+        }
         
         //valida password
         if(password_login.trim().length < 8 || password_login.trim().length > 12){
