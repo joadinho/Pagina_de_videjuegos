@@ -137,7 +137,7 @@ max-width: 500px;
 
 /*Letra VideoJuego*/
 .letraVJ{
-  color: rgba(255, 255, 255, 0.877);
+  color: rgba(0, 0, 0, 0.877);
   font-family: 'PT Sans Narrow', sans-serif;
 
 }
@@ -482,4 +482,14 @@ input:focus~.barra::before{
   .container.gallery-container {
       border-radius: 0;
   }
+}
+
+
+/*textarea*/
+.textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
 }
