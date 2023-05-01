@@ -8,16 +8,14 @@ $(document).ready(function(){
         let enviar = false;
 
         //valida email
-        if((email_ol).trim().indexOf('@', 0) == -1 || (email_ol).trim().indexOf( '.com' ,  0)  == -1 ) {
-            msjMostrarOlvidado += "-El correo electrónico introducido es invalido. Debe contener un @ y terminar con .com";
+        if((email_ol).trim().indexOf('@', 0) == -1 || (email_ol).trim().indexOf('.', 0) == -1) {
+            msjMostrarOlvidado += "-El correo electrónico introducido es invalido. Debe contener un @";
             enviar = true;
-        }
-
+        }  
         if(email_ol.trim() == ""){
             msjMostrarOlvidado += "<br>-El campo correo no puede estar vacio";
             enviar = true;
         }
-
 
 
         if(enviar){
