@@ -8,7 +8,6 @@ $(document).ready(function(){
         var correo    = $("#email").val();
         var contacto  = $("#telefono").val();
         var edad      = $("#edad").val();
-        var f_nac     = $("#f_nac").val();
         
         let msjMostrar = "";
         let enviar = false;
