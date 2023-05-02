@@ -426,7 +426,7 @@ input:focus~.barra::before{
 }
 /* posible slide*/
 .container.gallery-container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.89);
   color: #35373a;
   min-height: 100vh;
   border-radius: 20px;
