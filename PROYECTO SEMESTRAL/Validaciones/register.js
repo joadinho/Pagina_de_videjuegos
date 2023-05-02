@@ -27,12 +27,12 @@ $(document).ready(function(){
     
         
         if(nombre.trim() == ""){
-            msjMostrar += "<br>-El campo nombre no puede estar vacio.";
+            msjMostrar += "<br>-El campo nombre no puede estar vacío.";
             enviar = true;
         }
 
         if (nombre.match(/([0-9])/)){
-            msjMostrar += "<br>-Nombre invalido, no puede contener numeros.";
+            msjMostrar += "<br>-Nombre inválido, no puede contener números.";
             enviar = true;
          }
 
@@ -50,43 +50,43 @@ $(document).ready(function(){
 
 
         if(apellido.trim() == ""){
-            msjMostrar += "<br>-El campo apellido no puede estar vacio.";
+            msjMostrar += "<br>-El campo apellido no puede estar vacío.";
             enviar = true;
         }
 
         if (apellido.match(/([0-9])/)){
-            msjMostrar += "<br>-Apellido invalido, no puede contener numeros.";
+            msjMostrar += "<br>-Apellido inválido, no puede contener números.";
             enviar = true;
          }
 
         //validar password
         if(clave.trim().length < 8 || clave.trim().length > 12){
-            msjMostrar = msjMostrar + "<br>-Clave invalida debe tener entre 8 y 12 caracteres.";
+            msjMostrar = msjMostrar + "<br>-Clave inválida debe tener entre 8 y 12 caracteres.";
             enviar = true;
         }
 
         if(clave.trim()  == ""){
-            msjMostrar += "<br>-Clave invalida no puede estar vacia.";
+            msjMostrar += "<br>-Clave inválida no puede estar vacia.";
             enviar = true;
         }
 
         if (!clave.match(/([A-Z])/)){
-           msjMostrar += "<br>-Clave invalida Falta una letra mayuscula.";
+           msjMostrar += "<br>-Clave inválida Falta una letra mayuscula.";
             enviar = true;
         }
 
         if (!clave.match(/([a-z])/)){
-            msjMostrar += "<br>-Clave invalida Falta una letra minuscula.";
+            msjMostrar += "<br>-Clave inválida Falta una letra minuscula.";
              enviar = true;
          }
 
          if (!clave.match(/([0-9])/)){
-            msjMostrar += "<br>-Clave invalida Debe contener al menos un numero.";
+            msjMostrar += "<br>-Clave inválida Debe contener al menos un número.";
             enviar = true;
          }
 
         if (!clave.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
-            msjMostrar += "<br>-Clave invalida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
+            msjMostrar += "<br>-Clave inválida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
             enviar = true;
          }
 
@@ -102,12 +102,12 @@ $(document).ready(function(){
         //validar correo
 
         if((correo).trim().indexOf('@', 0) == -1 || (correo).trim().indexOf('.', 0) == -1) {
-            msjMostrar += "<br>-El correo electrónico introducido es invalido. Debe contener un @.";
+            msjMostrar += "<br>-El correo electrónico introducido es inválido. Debe contener un @.";
             enviar = true;
         }
 
         if(correo.trim() == ""){
-            msjMostrar += "<br>-El campo correo no puede estar vacio.";
+            msjMostrar += "<br>-El campo correo no puede estar vacío.";
             enviar = true;
         }
 
@@ -115,12 +115,12 @@ $(document).ready(function(){
 
 
         if(contacto.trim() == ""){
-            msjMostrar += "<br>-El campo teléfono no puede estar vacio.";
+            msjMostrar += "<br>-El campo teléfono no puede estar vacío.";
             enviar = true;
         }
         
         if(contacto.trim().length < 9 || contacto.trim().length > 12){
-            msjMostrar += "<br>-El télefono son entre 9 y 11 numeros.";
+            msjMostrar += "<br>-El télefono son entre 9 y 11 números.";
             enviar = true;
         }
 
@@ -130,7 +130,7 @@ $(document).ready(function(){
          }
 
         if (contacto.match(/([!,%,&,@,#,$,^,,?,_,~,.,])/)){
-            msjMostrar += "<br>-El teléfono no permite caracteres especiales excepto el +";
+            msjMostrar += "<br>-El teléfono no permite caracteres especiales";
             enviar = true;
          }
 
@@ -139,7 +139,7 @@ $(document).ready(function(){
         //validar edad
         
         if(edad < 15){
-            msjMostrar += "<br>-Para registrarse debe tener una edad minima de 15 años. ";
+            msjMostrar += "<br>-Para registrarse debe tener una edad mínima de 15 años. ";
             enviar = true;
 
         }

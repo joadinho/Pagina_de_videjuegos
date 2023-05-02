@@ -9,11 +9,11 @@ $(document).ready(function(){
 
         //valida email
         if((email_ol).trim().indexOf('@', 0) == -1 || (email_ol).trim().indexOf('.', 0) == -1) {
-            msjMostrarOlvidado += "-El correo electrónico introducido es invalido. Debe contener un @";
+            msjMostrarOlvidado += "-El correo electrónico introducido es inválido. Debe contener un @";
             enviar = true;
         }  
         if(email_ol.trim() == ""){
-            msjMostrarOlvidado += "<br>-El campo correo no puede estar vacio";
+            msjMostrarOlvidado += "<br>-El campo correo no puede estar vacío";
             enviar = true;
         }
 
