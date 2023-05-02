@@ -51,9 +51,11 @@ $(document).ready(function(){
 
 
         if (!["xbox series", "playstation 3", "nintendo", "pc","xbox one","playstation 4","playstation 5","xbox 360"].includes(plataformaJ.toLowerCase())) {
-            msjMostrarAgregar += "<br>-Plataforma inválida";
+            msjMostrarAgregar += "<br>-La plataforma ingresada es inválida";
             enviar = true;
           }
+        
+        //valida trailer
 
         
 
