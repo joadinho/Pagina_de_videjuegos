@@ -110,6 +110,12 @@ $(document).ready(function(){
             msjMostrar += "<br>-El campo correo no puede estar vacío.";
             enviar = true;
         }
+        var emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/; 
+
+        if (!emailRegex.test(correo)) {
+            msjMostrar += "<br>-No debe comenzar con @";
+            enviar = true;
+        }
 
         //validar telefono
 
@@ -149,7 +155,7 @@ $(document).ready(function(){
             $("#mensaje_register").html(msjMostrar);
         }
         else{
-            $("#mensaje_register").html("Enviado");
+            $("#mensaje_register").html("-Registrado correctamente.");
         }
 
         
