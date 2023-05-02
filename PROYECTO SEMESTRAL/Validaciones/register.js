@@ -7,8 +7,7 @@ $(document).ready(function(){
         var con_clave = $("#con_password").val();
         var correo    = $("#email").val();
         var contacto  = $("#telefono").val();
-        var edad      = $("#edad").val();
-        var f_nac     = $("#f_nac").val();
+        var edad      = $("#edad").val();       
         
         let msjMostrar = "";
         let enviar = false;
