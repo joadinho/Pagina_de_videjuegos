@@ -15,7 +15,15 @@ $(document).ready(function(){
             enviar = true;
         }
         if(email_login.trim() == ""){
-            msjMostrar += "<br>-El campo correo no puede estar vacío";
+            msjMostrarLogin += "<br>-El campo correo no puede estar vacío";
+            enviar = true;
+        }
+
+         
+        var emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/; 
+
+        if (!emailRegex.test(email_login)) {
+            msjMostrarLogin += "<br>-No debe comenzar con @";
             enviar = true;
         }
         
@@ -67,7 +75,7 @@ $(document).ready(function(){
             $("#mensaje").html(msjMostrarLogin);
         }
         else{
-            $("#mensaje").html("Enviado");
+            $("#mensaje").html("-Sesion Iniciada.");
         }
 
     });

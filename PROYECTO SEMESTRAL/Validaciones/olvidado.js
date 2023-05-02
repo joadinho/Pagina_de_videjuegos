@@ -16,13 +16,19 @@ $(document).ready(function(){
             msjMostrarOlvidado += "<br>-El campo correo no puede estar vacío";
             enviar = true;
         }
+        var emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/; 
+
+        if (!emailRegex.test(email_ol)) {
+            msjMostrarOlvidado += "<br>-No debe comenzar con @";
+            enviar = true;
+        }
 
 
         if(enviar){
             $("#mensaje_Olvidado").html(msjMostrarOlvidado);
         }
         else{
-            $("#mensaje_Olvidado").html("Enviado");
+            $("#mensaje_Olvidado").html("-En unos minutos le llegará el codigo.");
         }
     });
 

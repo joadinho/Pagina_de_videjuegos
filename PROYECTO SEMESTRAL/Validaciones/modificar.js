@@ -73,6 +73,12 @@ $(document).ready(function(){
             msjMostrarModi += "<br>-El correo electrónico introducido es inválido. Debe contener un @";
             enviar = true;
         }
+        var emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/; 
+
+        if (!emailRegex.test(email_modi)) {
+            msjMostrarModi += "<br>-No debe comenzar con @";
+            enviar = true;
+        }
 
         if(email_modi.trim() == ""){
             msjMostrarModi += "<br>-El campo correo no puede estar vacío";
@@ -102,7 +108,7 @@ $(document).ready(function(){
             $("#mensaje_modificar").html(msjMostrarModi);
         }
         else{
-            $("#mensaje_modificar").html("Enviado");
+            $("#mensaje_modificar").html("-Perfil Modificado exitosamente.");
         }
     });
 

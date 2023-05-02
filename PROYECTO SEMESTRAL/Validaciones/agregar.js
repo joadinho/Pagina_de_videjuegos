@@ -24,25 +24,25 @@ $(document).ready(function(){
     
         
         if(nombreJ.trim() == ""){
-            msjMostrarAgregar += "<br>-El campo nombre no puede estar vacio";
+            msjMostrarAgregar += "<br>-El campo nombre no puede estar vacío";
             enviar = true;
         }
 
         //valida la descripcion
-        if(descripcionJ.trim().length < 50 || descripcionJ.trim().length > 1500){
-            msjMostrarAgregar = msjMostrarAgregar + "<br>-La descripcion debe tener entre 50 y 1500 caracteres";
+        if(descripcionJ.trim().length < 50 || descripcionJ.trim().length > 2500){
+            msjMostrarAgregar = msjMostrarAgregar + "<br>-La descripción debe tener entre 50 y 2500 caracteres";
             enviar = true;
         }
 
         var letra = descripcionJ.trim().charAt(0);
         if(!esMayuscula(letra)){
-            msjMostrarAgregar += "<br>-La descripcion debe comenzar con mayúscula";
+            msjMostrarAgregar += "<br>-La descripción debe comenzar con mayúscula";
             enviar = true;
         }
     
         
         if(descripcionJ.trim() == ""){
-            msjMostrarAgregar += "<br>-El campo descripcion no puede estar vacio";
+            msjMostrarAgregar += "<br>-El campo descripción no puede estar vacío";
             enviar = true;
         }
 
@@ -54,8 +54,14 @@ $(document).ready(function(){
             msjMostrarAgregar += "<br>-La plataforma ingresada es inválida";
             enviar = true;
           }
-        
-        //valida trailer
+
+          //valida el trailer
+            if (!/^(https?|ftp):[//)?(www.)?[^\s/$.?#].[^\s]*$/i.test(trailerJ)) {
+                    msjMostrarAgregar += "<br>-Url inválido debe comenzar con https: ";
+                    enviar = true;
+                }
+            
+
 
         
 
@@ -84,7 +90,7 @@ $(document).ready(function(){
             $("#mensaje_agregar").html(msjMostrarAgregar);
         }
         else{
-            $("#mensaje_agregar").html("Enviado");
+            $("#mensaje_agregar").html("-Juego agregado exitosamente.");
         }
 
     });
