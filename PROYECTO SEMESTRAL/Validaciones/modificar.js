@@ -25,38 +25,38 @@ $(document).ready(function(){
     
         
         if(nombre_modi.trim() == ""){
-            msjMostrarModi += "<br>-El campo nombre no puede estar vacio";
+            msjMostrarModi += "<br>-El campo nombre no puede estar vacío";
             enviar = true;
         }
 
         //validar password
         if(clave_modi.trim().length < 8 || clave_modi.trim().length > 12){
-            msjMostrarModi = msjMostrarModi + "<br>-Clave invalida debe tener entre 8 y 12 caracteres";
+            msjMostrarModi = msjMostrarModi + "<br>-Clave inválida debe tener entre 8 y 12 caracteres";
             enviar = true;
         }
 
         if(clave_modi.trim()  == ""){
-            msjMostrarModi += "<br>-Clave invalida no puede estar vacia";
+            msjMostrarModi += "<br>-Clave inválida no puede estar vacío";
             enviar = true;
         }
 
         if (!clave_modi.match(/([A-Z])/)){
-           msjMostrarModi += "<br>-Clave invalida Falta una letra mayuscula";
+           msjMostrarModi += "<br>-Clave inválida Falta una letra mayúscula";
             enviar = true;
         }
 
         if (!clave_modi.match(/([a-z])/)){
-            msjMostrarModi += "<br>-Clave invalida Falta una letra minuscula";
+            msjMostrarModi += "<br>-Clave inválida Falta una letra minúscula";
              enviar = true;
          }
 
          if (!clave_modi.match(/([0-9])/)){
-            msjMostrarModi += "<br>-Clave invalida Debe contener al menos un numero";
+            msjMostrarModi += "<br>-Clave inválida Debe contener al menos un numero";
             enviar = true;
          }
 
         if (!clave_modi.match(/([!,%,&,@,#,$,^,,?,_,~,.])/)){
-            msjMostrarModi += "<br>-Clave invalida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
+            msjMostrarModi += "<br>-Clave inválida Debe contener un caracter especial  !,%,&,@,#,$,^,,?,_,~,.";
             enviar = true;
         }
 
@@ -70,12 +70,12 @@ $(document).ready(function(){
         //valida correo
 
         if((email_modi).trim().indexOf('@', 0) == -1 || (email_modi).trim().indexOf('.', 0) == -1) {
-            msjMostrarModi += "<br>-El correo electrónico introducido es invalido. Debe contener un @";
+            msjMostrarModi += "<br>-El correo electrónico introducido es inválido. Debe contener un @";
             enviar = true;
         }
 
         if(email_modi.trim() == ""){
-            msjMostrarModi += "<br>-El campo correo no puede estar vacio";
+            msjMostrarModi += "<br>-El campo correo no puede estar vacío";
             enviar = true;
         }
 
