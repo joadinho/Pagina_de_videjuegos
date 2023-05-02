@@ -7,8 +7,9 @@
 
 /*Titulo*/
 .titulo{
-  color: rgba(95, 0, 248, 0.411);
-  font-family: 'Righteous', cursive;  
+  color: rgb(255, 255, 255);
+  font-family: 'Righteous', cursive; 
+  background-color: #000000a9; 
 }
 
 /*Fondo play*/
